@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   list-style: none;
+   text-decoration: none;
+
+
+
+}
+
+/*navbar*/
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+}
+.logo{
+    cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin: 3px;
+    
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width:676px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul li{
+        display: flex;
+        padding: 10px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        
+    }
+    ul{
+  
+    padding: 0;
+    display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0 0 20px;
+    }
+    .menu{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+    .showmenu{
+        display: block;
+
+    }
+}
+
+
+ 
+.image img{
+    height: 700px;
+    width: 100%; 
+}
+.trendingcollection h2{
+    color: #111;
+    font-size: 33px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.trendingcollection span{
+    color: #f63e4e;
+}
+
+.dress{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+    gap: 10rem;
+    justify-content: center;
+}
+.dresscollection{
+    position: relative;
+    transition: all .40s;
+}
+.dress .dresscollection img{
+    width: 270px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.dresscollection img:hover{
+    transition: all .40s;
+    transform: scale(0.9);
+}
+.dresscollection h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    background-color: #27b737;
+    border-radius: 2px;
+}
+.price h4{
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.price p{
+    text-align: center;
+
+}
+.offer h1{
+    color: #111;
+    font-size: 30px ;
+    padding-top: 9px;
+    text-align: center;
+    background-color:#27b737;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+    gap: 2rem;
+}
+.offersection img{
+    width: 20%;
+    height: 80%;
+
+
+}
+ 
+.offersection h5{
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    top: 20px;
+    text-align: center;
+    
+
+}
+.offersection h4{
+    color: #111;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.offersection p{
+    color: #707070;
+    font-size: 20px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.offersection h6{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.outfit h1{
+    text-align: center;
+    font-size: 200%;
+    text-decoration: underline;
+}
+.trend{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+    justify-content: center;
+    gap: 50px;
+}
+.trend .trending img{
+    height: 290px;
+    width: 260px;
+}
+
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px, auto));
+    gap: 2rem;
+    padding: 20px;
+    background-color: gray;
+
+}
+
+.contact-info img{
+    height: 40px;
+    border-radius: 35%;
+}
